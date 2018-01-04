@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title>Domino</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="Domino Arquitetura e Design">
+	<meta name="keywords" content="arquitetura, design">
+	<meta name="rebots" content="index, follow">
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css">
+	<link rel="shortcut icon" href="_imagens/favicon.ico">
+	
+	<script src="http://code.jquery.com./jquery-1.11.3.min.js"></script>
+
+	
+	<script type="text/javascript">// <![CDATA[
+	$(document).ready(function() {
+	function filterPath(string) {
+	return string
+	.replace(/^\//,'')
+	.replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+	.replace(/\/$/,'');
+	}
+	$('a[href*=#]').each(function() {
+	if ( filterPath(location.pathname) == filterPath(this.pathname)
+	&& location.hostname == this.hostname
+	&& this.hash.replace(/#/,'') ) {
+	var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+	var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+	if ($target) {
+	var targetOffset = $target.offset().top;
+	$(this).click(function() {
+	$('html, body').animate({scrollTop: targetOffset}, 300);
+	return false;
+	});
+	}
+	}
+	});
+	});
+	// ]]></script>
+
+</head>
+<body>
+	<div class="corpoTopo verdeAgua">
+		<header class="conteudo limpa">
+			<a href="index.html" title="Domino Arquitetura e Desing">
+			<img src="_imagens/logoBranco.png" alt="Logotipo Domino" title="Domino Arquitetura e Design" class="logo" />
+			</a>
+			<nav class="menu bordas">
+				<ul>
+					<li><a href="#servicos">Nossos Serviços</a></li>
+					<li><a href="portifolio.html">Portifólio</a></li>
+					<li><a href="contato.html"> Contato</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	<div class="corpoSlide cinza">
+
+		<div id="contenedor-slider" class="contenedor-slider cinza">
+ 			<div id="slider" class="slider">
+			    <section class="slider__section"><img src="_imagens/_slide/01.jpg" class="slider__img"></section>
+			    <section class="slider__section"><img src="_imagens/_slide/02.jpg" class="slider__img"></section>
+			    <section class="slider__section"><img src="_imagens/_slide/03.jpg" class="slider__img"></section>
+			    <section class="slider__section"><img src="_imagens/_slide/04.jpg" class="slider__img"></section>
+			    <section class="slider__section"><img src="_imagens/_slide/05.jpg" class="slider__img"></section>
+			    <section class="slider__section"><img src="_imagens/_slide/06.jpg" class="slider__img"></section>
+			    <section class="slider__section"><img src="_imagens/_slide/07.jpg" class="slider__img"></section>
+			    
+  			</div>
+  			<div id="btn-prev" class="btn-prev">&#60;</div>
+  			<div id="btn-next" class="btn-next">&#62;</div>
+ 		</div>
+				<script src="_javascripts/slider.js"></script>	
+	</div>			
+		
+	<section class="corpo limpa">
+		<div class="conteudo ">
+			<h1 class="tituloDestaque sombraTexto">Quem somos e nossa visão</h1>
+
+			<article class=" caixa caixa4 sombra bordas">
+				<h2 class="titulo">Somos</h2>
+				<p>Um escritório idealizado pelo arquiteto e urbanista Carlos Alberto Fitipaldi Jacopeta, que une os conhecimentos adquiridos no ínicio de sua carreira de marceneiro e empreendedor, ficando na área da marcenaria entre 1997  e meados de 2005, na ocosião a proximidade com a arquitetura o fez descobrir a vocação para ser arquiteto.<br> Com essa união históricamente bem sucedida, (diversos grandes arquitetos e designs vieram dessa mesma escola), bebemos dessa fonte e nossos projetos visam a união perfeita da arquitetura com o ser humano.</p>
+			</article>
+			<article class=" caixa caixa4 sombra bordas">
+				<h2 class="titulo"><a name="servicos">Serviços</a></h2>
+				<ul>
+						<li>Projetos Arquitetônicos.</li>
+							<ul>
+								<li>Residencial.</li>
+								<li>Comercial.</li>
+								<li>Corporativo.</li>
+							</ul>
+								<li>Projetos Complementares.</li>
+								<li>Consultoria.</li>
+								<li>Perícia.</li>
+								<li>Design de Interiores.</li>
+								<li>Design de Mobiliário.</li>
+								<li>3d Foto realista.</li>
+								<li>Paisagismo projeto e execução.</li>
+								<li>Projeto de reforma.</li>
+								<li>Acompanhamento de obras.</li>
+					</ul>
+			</article>
+			<article class=" caixa caixa4 sombra bordas">
+					<h2 class="titulo">Missão</h2>
+					<p>Criar e acompanhar projetos arquitetônicos inovadores com novas tecnologias e conceitos que satisfaçam nossos clientes, valorizando seus empreendimentos e seus sonhos.<br> A produção de design exclusivo de forma  independente ou de maneira a complementar o projeto de arquitetura, unindo tecnologia, conceitos únicos e sustentabilidade. <br>Buscar soluções especiais para cada projeto, utilizando técnicas e materiais que visem sempre os melhores custos e prazos para o cliente.</p>
+			</article>
+		</div>
+	</section>
+	
+	<footer class=" corpoRodape verdeAgua">
+		<div class="conteudo">
+			<p>&copy; 2017 - Domino Arquitetura e Design</p>
+			<span>Todo projeto é importante, seja qual for sua dimensão, o objetivo será sempre a excelência de nossos serviços.</span>
+
+			<ul class="social">
+				<li>
+					<a href="http://facebook.com/dominoarquitetura" title="Facebook" target="_blank"><img src="_imagens/facebook.png" class="face" /></a>
+				</li>
+				<li>
+					<a href="http://instagram.com/dominofitipaldi" title="instagram" target="_blank"><img src="_imagens/instagram.png" class="face"> 
+				</li>
+			</ul>
+
+		</div>
+	</footer>
+
+	<script src="_javascript/funcoes.js"></script>
+
+</body>
+</html>
+

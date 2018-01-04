@@ -1,0 +1,46 @@
+
+.endereco li, address{
+    line-height: 50px;
+    font-style: italic;
+    border-bottom: 1px #eee solid;
+    list-style: none;
+    text-align: left;
+}
+.endereco a{
+    color: #444
+}
+.endereco a:hover{
+    color: #ccc
+}
+.endereco img {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 5px
+}
+
+input[type="text"],input[type="email"],textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #e9e9e9;
+    border: 1px solid #ddd;
+    margin: 1%;
+    text-align: left
+}
+
+.botao {
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid;
+    color: #fff;
+    cursor: pointer
+}
+
+.botaoGrande {
+    padding: 15px 50px;
+}
+.botaoAzul {
+	background-color: #008B8B;
+    /*background-color: #0089fa;*/
+    border-color: #0082ec
+}
